@@ -1,2 +1,1 @@
-# taku-ten
-卓展のwebサイト
+# 卓展web 本番
