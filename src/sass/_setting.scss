@@ -4,7 +4,35 @@ $font-smoothing: antialiased;
 //auto,optimizeSpeed,optimizeLegibility,geometricPrecision
 $text-rendering: auto;
 
-$base-font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+//フォント設定
+@font-face {
+  font-family: "GothicBBBPro";
+  src: url(/assets/lib/A-OTF-GothicBBBPro-Medium.otf);
+}
+
+@font-face {
+  font-family: "nevis";
+  src: url(/assets/lib/nevis.ttf);
+}
+
+@font-face {
+  font-family: "Toppan";
+  src: url(/assets/lib/ToppanBunkyuMidashiGothic-ExtraBold.otf);
+}
+
+// color設定
+$primary-color: #ffe33f;
+$accent-blue-color: #2ea7e0;
+$accent-lightblue-color: #9fd9f6;
+$accent-orange-color: #f39800;
+$white: #fff;
+$black: #231815;
+
+// デフォルト設定
+$base-font-family: "GothicBBBPro","游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+$english-font-family: "nevis";
+$bold-font-family: "Toppan";
+
 $base-font-size: 14px;
-$base-font-color: #333;
-$base-background-color: #fff;
+$base-font-color: $black;
+$base-background-color: $white;
