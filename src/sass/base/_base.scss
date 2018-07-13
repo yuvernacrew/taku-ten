@@ -21,8 +21,180 @@ body {
 
 .english-font {
   font-family: $english-font-family;
+  letter-spacing: 4px;
+  line-height: 0.9;
 }
 
 .bold-font {
   font-family: $bold-font-family;
+}
+
+/*------------------------
+  text-align
+------------------------*/
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/*------------------------
+  text-size
+------------------------*/
+
+.text-xsmall {
+  font-size: 10px;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.text-middle {
+  font-size: 16px;
+}
+
+.text-large {
+  font-size: 20px;
+}
+
+.text-xlarge {
+  font-size: 24px;
+}
+
+.text-xxlarge {
+  font-size: 36px;
+}
+
+.text-xxxlarge {
+  font-size: 48px;
+}
+
+/*------------------------
+  text-decoration
+------------------------*/
+.text-strong {
+  font-weight: bold;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+/*------------------------
+  text-color
+------------------------*/
+.text-white {
+  color: $white;
+}
+
+.text-yellow {
+  color: $primary-color;
+}
+
+.text-orange {
+  color: $accent-orange-color;
+}
+
+.text-blue {
+  color: $accent-blue-color;
+}
+
+/*------------------------
+  margin
+------------------------*/
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.mb12 {
+  margin-bottom: 12px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+/*------------------------
+  layout
+------------------------*/
+.l-left {
+  float: left;
+}
+
+.l-right {
+  float: right;
+}
+
+.l-relative {
+  position: relative;
+}
+
+.l-absolute {
+  position: absolute;
+}
+
+.l-centerX {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50% -50%);
+  transform: translate(-50% -50%);
+}
+
+.l-centerX {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.l-centerY {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/*------------------------
+  sp / pc
+------------------------*/
+@media(min-width: 780px){
+  .is-pc {
+    display: block;
+  }
+
+  .is-pc-ib {
+    display: inline-block;
+  }
+
+  .is-sp,
+  .is-sp-ib {
+    display: none !important;
+  }
+
+}
+
+@media(max-width: 780px){
+  .is-pc,
+  .is-pc-ib {
+    display: none !important;
+  }
+
+  .is-sp {
+    display: block;
+  }
+
+  .is-sp-ib {
+    display: inline-block;
+  }
 }
