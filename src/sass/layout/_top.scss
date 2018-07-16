@@ -101,6 +101,38 @@
         height: auto;
       }
     }
+
+    .mv-detail {
+      position: absolute;
+      bottom: 32px;
+      left: 44px;
+      z-index: 5;
+
+      &:after {
+        content: "";
+        bottom: 28px;
+        left: 16px;
+        width: 352px;
+        height: 136px;
+        position: absolute;
+        background-color: #ffe33f;
+        z-index: -1;
+      }
+
+      .mv-detail-container {
+        .date {
+          height: 52px;
+
+          img {
+            height: 100%;
+          }
+        }
+
+        .time {
+          letter-spacing: -2.5px;
+        }
+      }
+    }
   }
 
   @media(max-width: 780px){
