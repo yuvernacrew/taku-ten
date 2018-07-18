@@ -90,7 +90,7 @@ textarea { resize: vertical; }
 <p>特に何も指定しないときの状態</p>
 ```
 */
-body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-smoothing: antialiased; text-rendering: auto; font-size: 14px; font-family: "GothicBBBPro", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; color: #231815; background-color: #fff; }
+body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-smoothing: antialiased; text-rendering: auto; font-size: 16px; font-family: "GothicBBBPro", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; color: #231815; background-color: #fff; }
 
 .english-font { font-family: "nevis"; letter-spacing: 4px; line-height: 0.9; }
 
@@ -189,7 +189,7 @@ body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoo
 
 .mv-container .mv-content .mv-logo { width: 150px; right: 36px; top: 32px; z-index: 2; }
 
-.mv-container .mv-content .mv-logo::before { content: ""; position: absolute; right: 24px; top: 28px; width: 130px; height: 360px; background-color: #ffe33f; z-index: 2; }
+.mv-container .mv-content .mv-logo::before { content: ""; position: absolute; right: 24px; top: 28px; width: 120px; height: 340px; background-color: #ffe33f; z-index: 2; }
 
 .mv-container .mv-content .mv-logo img { width: 150px; height: auto; position: absolute; right: 0; left: 0; z-index: 5; }
 
@@ -216,6 +216,19 @@ body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoo
   .mv-container .mv-content .mv-logo img { width: 100px; height: auto; position: absolute; right: 0; left: 0; }
   .mv-container .mv-content .mv-background { width: 100vw; height: 100vh; overflow: hidden; }
   .mv-container .mv-content .mv-background svg { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: auto; height: 100vh; } }
+
+h2 { font-family: "nevis"; font-size: 48px; text-align: center; position: relative; letter-spacing: 4px; margin: 0 auto 48px; width: 40%; background: linear-gradient(transparent 60%, #9fd9f6 40%); }
+
+.about-text { line-height: 2.2; }
+
+.about-date { margin: 0 auto 40px; text-align: center; }
+
+.about-date img { width: 35%; margin-bottom: 16px; }
+
+@media (max-width: 780px) { h2 { width: 80%; }
+  .container { padding: 0 4%; }
+  .about-text { line-height: 1.4; }
+  .about-date img { width: 80%; margin-bottom: 16px; } }
 
 .icon { display: inline-block; background-repeat: no-repeat; }
 
