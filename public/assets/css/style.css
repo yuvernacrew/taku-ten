@@ -199,7 +199,7 @@ body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoo
 
 .mv-container .mv-content .mv-detail { position: absolute; bottom: 32px; left: 44px; z-index: 5; }
 
-.mv-container .mv-content .mv-detail:after { content: ""; bottom: 28px; left: 16px; width: 352px; height: 136px; position: absolute; background-color: #ffe33f; z-index: -1; }
+.mv-container .mv-content .mv-detail:after { content: ""; bottom: 28px; left: 16px; width: 386px; height: 150px; position: absolute; background-color: #ffe33f; z-index: -1; }
 
 .mv-container .mv-content .mv-detail .mv-detail-container .date { height: 52px; }
 
@@ -217,18 +217,23 @@ body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoo
   .mv-container .mv-content .mv-background { width: 100vw; height: 100vh; overflow: hidden; }
   .mv-container .mv-content .mv-background svg { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: auto; height: 100vh; } }
 
-h2 { font-family: "nevis"; font-size: 48px; text-align: center; position: relative; letter-spacing: 4px; margin: 0 auto 48px; width: 40%; background: linear-gradient(transparent 60%, #9fd9f6 40%); }
+.about-container { width: calc(100% - 120px); margin: 40px auto 0; padding: 40px 0; background-image: url("../images/about-background.png"); background-size: cover; background-repeat: repeat-y; }
 
-.about-text { line-height: 2.2; }
+.about-container h2 { font-family: "nevis"; font-size: 48px; text-align: center; position: relative; letter-spacing: 4px; margin: 28px auto 20px; width: 40%; }
 
-.about-date { margin: 0 auto 40px; text-align: center; }
+.about-container .container { padding: 12px 0 40px; }
 
-.about-date img { width: 35%; margin-bottom: 16px; }
+.about-container .container .about-text { line-height: 2.2; }
 
-@media (max-width: 780px) { h2 { width: 80%; }
-  .container { padding: 0 4%; }
-  .about-text { line-height: 1.4; }
-  .about-date img { width: 80%; margin-bottom: 16px; } }
+.about-container .container .about-date { margin: 0 auto 40px; text-align: center; }
+
+.about-container .container .about-date img { width: 35%; margin-bottom: 16px; }
+
+@media (max-width: 780px) { .about-container { width: calc(100% - 40px); margin: 120px auto 0; padding: 40px 0; background-image: url("../images/about-background.png"); background-size: cover; background-repeat: repeat-y; }
+  .about-container h2 { width: 80%; }
+  .about-container .container { padding: 0 2%; }
+  .about-container .container .about-text { line-height: 1.4; }
+  .about-container .container .about-date img { width: 90%; margin-bottom: 16px; } }
 
 .icon { display: inline-block; background-repeat: no-repeat; }
 

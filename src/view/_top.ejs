@@ -3,14 +3,14 @@
     <h1 class="mv-logo l-absolute">
       <img src="assets/images/mv-logo.png" alt="卓展2018">
     </h1>
-    <div class="mv-title l-absolute is-pc">
+    <div class="mv-title l-absolute">
       <p>デザインを学ぶ学生による<span class="text-orange">13</span>プロジェクトの成果発表・展示会</p>
       <p class="text-xxlarge english-font">TAKU PUROJECT</p>
     </div>
     <div class="mv-background">
       <% include svg/_background %>
     </div>
-    <div class="mv-detail is-pc">
+    <div class="mv-detail">
       <div class="mv-detail-container">
         <p class="date mb12"><img src="assets/images/date.svg" alt="8/17(金)〜8/19(日)"></p>
         <p class="time english-font text-xxlarge mb12">10:00 - 17:00</p>
@@ -21,33 +21,45 @@
   </div>
 </div>
 
-<h2>ABOUT</h2>
-<div class="container">
-  <div class="about-text text-center mb40">
-    <p class="mb20">
-      「卓展」とは、名古屋市立大学芸術工学部の学生による作品展示会です。 <br>
-      プロジェクトに賛同した人々が卓を囲むように集まることから「卓展」となりました。
+<div class="about-container">
+  <h2>ABOUT</h2>
+  <div class="container">
+    <div class="about-text text-center mb40">
+      <p class="mb20">
+        「卓展」とは、名古屋市立大学芸術工学部の学生による作品展示会です。 <br>
+        プロジェクトに賛同した人々が卓を囲むように集まることから「卓展」となりました。
+      </p>
+      <p class="mb20">
+        部４年生をリーダーとして多種多様なジャンルのプロジェクトを立ち上げ、<br>
+        学科・学年の垣根を越えて制作を行います。
+      </p>
+      <p class="mb20">
+        今年も見どころたっぷりの展示会ですので、是非お越しください。
+      </p>
+    </div>
+  </div>
+
+  <h2>DATE</h2>
+  <div class="container">
+    <p class="about-date">
+      <img src="assets/images/date.svg" alt="8/17(金)〜8/19(日)"><br>
+      10:00 - 17:00 <br class="is-sp">
+      (最終日19日のみ16:30終了)
     </p>
-    <p class="mb20">
-      部４年生をリーダーとして多種多様なジャンルのプロジェクトを立ち上げ、<br>
-      学科・学年の垣根を越えて制作を行います。
-    </p>
-    <p class="mb20">
-      今年も見どころたっぷりの展示会ですので、是非お越しください。
-    </p>
+  </div>
+
+  <h2>PROJECT</h2>
+  <div class="container">
+    <p class="text-xlarge english-font text-center">comming soon...</p>
+  </div>
+
+  <h2>ACCESS</h2>
+  <div class="container">
+    <p class="text-xlarge english-font text-center">comming soon...</p>
   </div>
 </div>
 
-<h2>DATE</h2>
-<div class="container">
-  <p class="about-date">
-    <img src="assets/images/date.svg" alt="8/17(金)〜8/19(日)"><br>
-    10:00 - 17:00 <br class="is-sp">
-    (最終日19日のみ16:30終了)
-  </p>
-</div>
 
-<h2>ACCESS</h2>
 
 <footer>
 
@@ -71,7 +83,11 @@
   #program05,
   #furniture01,
   #furniture02,
-  #furniture03
+  #furniture03,
+  #furniture04,
+  .mv-logo,
+  .mv-title,
+  .mv-detail
    {
     display: none;
   }
@@ -86,160 +102,175 @@
 </style>
 
 <script>
+$(function(){
 
-// graphic
+  // graphic
 
-function graphicAnimation(){
-  new Vivus('graphic01', {
-    type: 'delayed',
-    duration: 200,
-  });
+  function graphicAnimation(){
+    new Vivus('graphic01', {
+      type: 'delayed',
+      duration: 150,
+    });
 
-  new Vivus('graphic02', {
-    type: 'delayed',
-    duration: 200,
-  });
+    new Vivus('graphic02', {
+      type: 'delayed',
+      duration: 150,
+    });
 
-  new Vivus('graphic03', {
-    type: 'delayed',
-    duration: 200,
-  });
-}
+    new Vivus('graphic03', {
+      type: 'delayed',
+      duration: 150,
+    });
+  }
 
-setTimeout(function(){
-  $("#graphic01,#graphic02,#graphic03").fadeIn();
-  graphicAnimation();
-},800);
-
-
-// art
-
-function artAnimation(){
-  new Vivus('art01', {
-    type: 'delayed',
-    duration: 200,
-  });
-
-  new Vivus('art02', {
-    type: 'delayed',
-    duration: 200,
-  });
-
-  new Vivus('art03', {
-    type: 'delayed',
-    duration: 200,
-  });
-}
-
-setTimeout(function(){
-  $("#art01,#art02,#art03").fadeIn();
-  artAnimation();
-},1600);
+  setTimeout(function(){
+    $("#graphic01,#graphic02,#graphic03").fadeIn();
+    graphicAnimation();
+  },800);
 
 
-// product
+  // art
 
-function productAnimation(){
-  new Vivus('product01', {
-    type: 'delayed',
-    duration: 200,
-  });
+  function artAnimation(){
+    new Vivus('art01', {
+      type: 'delayed',
+      duration: 150,
+    });
 
-  new Vivus('product02', {
-    type: 'delayed',
-    duration: 200,
-  });
+    new Vivus('art02', {
+      type: 'delayed',
+      duration: 150,
+    });
 
-  new Vivus('product03', {
-    type: 'delayed',
-    duration: 200,
-  });
+    new Vivus('art03', {
+      type: 'delayed',
+      duration: 150,
+    });
+  }
 
-  new Vivus('product04', {
-    type: 'delayed',
-    duration: 200,
-  });
-}
+  setTimeout(function(){
+    $("#art01,#art02,#art03").fadeIn();
+    artAnimation();
+  },1600);
 
-setTimeout(function(){
-  $("#product01, #product02, #product03, #product04").fadeIn();
-  productAnimation();
-},2400);
 
-// program
-function programAnimation(){
-  new Vivus('program01', {
-    type: 'delayed',
-    duration: 200,
-  });
+  // product
 
-  new Vivus('program02', {
-    type: 'delayed',
-    duration: 200,
-  });
+  function productAnimation(){
+    new Vivus('product01', {
+      type: 'delayed',
+      duration: 150,
+    });
 
-  new Vivus('program03', {
-    type: 'delayed',
-    duration: 200,
-  });
+    new Vivus('product02', {
+      type: 'delayed',
+      duration: 150,
+    });
 
-  new Vivus('program04', {
-    type: 'delayed',
-    duration: 200,
-  });
-  new Vivus('program05', {
-    type: 'delayed',
-    duration: 200,
-  });
-}
+    new Vivus('product03', {
+      type: 'delayed',
+      duration: 150,
+    });
 
-setTimeout(function(){
-  $("#program01,#program02,#program03,#program04,#program05").fadeIn();
-  programAnimation();
-},3200);
+    new Vivus('product04', {
+      type: 'delayed',
+      duration: 150,
+    });
+  }
 
-// furniture
+  setTimeout(function(){
+    $("#product01, #product02, #product03, #product04").fadeIn();
+    productAnimation();
+  },2400);
 
-function furnitureAnimation(){
-  new Vivus('furniture01', {
-    type: 'delayed',
-    duration: 200,
-  });
+  // program
+  function programAnimation(){
+    new Vivus('program01', {
+      type: 'delayed',
+      duration: 150,
+    });
 
-  new Vivus('furniture02', {
-    type: 'delayed',
-    duration: 200,
-  });
+    new Vivus('program02', {
+      type: 'delayed',
+      duration: 150,
+    });
 
-  new Vivus('furniture03', {
-    type: 'delayed',
-    duration: 200
-  }, color);
-}
+    new Vivus('program03', {
+      type: 'delayed',
+      duration: 150,
+    });
 
-setTimeout(function(){
-  $("#furniture01,#furniture02,#furniture03").fadeIn();
-  furnitureAnimation();
-},4000);
+    new Vivus('program04', {
+      type: 'delayed',
+      duration: 150,
+    });
+    new Vivus('program05', {
+      type: 'delayed',
+      duration: 150,
+    });
+  }
 
-function color(){
-  $('.cls-2, .cls-11, .cls-12, .cls-13, .cls-14').fadeIn();
+  setTimeout(function(){
+    $("#program01,#program02,#program03,#program04,#program05").fadeIn();
+    programAnimation();
+  },3200);
 
-  $('.cls-34').css({
-    fill: '#9ed8f5',
-    transition: "8.0s"
-  });
-  $('.cls-35, .cls-56, .cls-53').css({
-    fill: '#fff',
-    transition: "8.0s"
-  });
-  $('.cls-20, .cls-4, .cls-47').css({
-    fill: '#2ca6e0',
-    transition: "8.0s"
-  });
-  $('.cls-23, .cls-27').css({
-    fill: '#f39800',
-    transition: "8.0s"
-  });
-}
+  // furniture
+
+  function furnitureAnimation(){
+    new Vivus('furniture01', {
+      type: 'delayed',
+      duration: 150,
+    });
+
+    new Vivus('furniture02', {
+      type: 'delayed',
+      duration: 150,
+    });
+
+    new Vivus('furniture03', {
+      type: 'delayed',
+      duration: 150,
+    }, animationEnd);
+
+    new Vivus('furniture04', {
+      type: 'delayed',
+      duration: 150,
+    });
+  }
+
+  setTimeout(function(){
+    $("#furniture01 ,#furniture02, #furniture03, #furniture04").fadeIn();
+    furnitureAnimation();
+  },4000);
+
+  $fadeIn = $('.cls-2, .cls-11, .cls-12, .cls-13, .cls-14, .mv-logo');
+
+  $mvDetail = $('.mv-title, .mv-detail')
+  function animationEnd(){
+    $fadeIn.fadeIn();
+
+    if($(window).width() > 768){
+      $mvDetail.fadeIn();
+    }
+
+    $('.cls-34').css({
+      fill: '#9ed8f5',
+      transition: "8.0s"
+    });
+
+    $('.cls-35, .cls-56, .cls-53').css({
+      fill: '#fff',
+      transition: "8.0s"
+    });
+    $('.cls-20, .cls-4, .cls-47').css({
+      fill: '#2ca6e0',
+      transition: "8.0s"
+    });
+    $('.cls-23, .cls-27').css({
+      fill: '#f39800',
+      transition: "8.0s"
+    });
+  }
+});
 </script>
