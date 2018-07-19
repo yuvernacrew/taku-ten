@@ -53,28 +53,72 @@
 
 </footer>
 
+<style>
+  #graphic01,
+  #graphic02,
+  #graphic03 {
+    display: none;
+  }
+
+  .fill-blue {
+    fill: #2ca6e0;
+  }
+
+  .cls-2,
+  .cls-11,
+  .cls-12,
+  .cls-13,
+  .cls-14 {
+    display: none;
+  }
+</style>
+
 <script>
-new Vivus('furnitureWhiteCenter', {
+new Vivus('furniture01', {
   type: 'delayed',
   duration: 200,
 });
 
-new Vivus('graqhicWhite', {
+setTimeout(function(){
+  $("#graphic01,#graphic02,#graphic03").show(0,function(){
+    new Vivus('graphic01', {
+      type: 'delayed',
+      duration: 200,
+    },function(){
+      $('.cls-2, .cls-11, .cls-12, .cls-13, .cls-14').show();
+      $('.cls-20 , .cls-4').addClass('fill-blue');
+    });
+
+    new Vivus('graphic02', {
+      type: 'delayed',
+      duration: 200,
+    },function(){
+      $('.cls-2, .cls-11, .cls-12, .cls-13, .cls-14').show();
+      $('.cls-20 , .cls-4').addClass('fill-blue');
+    });
+
+    new Vivus('graphic03', {
+      type: 'delayed',
+      duration: 200,
+    },function(){
+      $('.cls-2, .cls-11, .cls-12, .cls-13, .cls-14').show();
+      $('.cls-20 , .cls-4').addClass('fill-blue');
+    });
+  })
+},1000)
+
+new Vivus('art01', {
   type: 'delayed',
   duration: 200,
 });
 
-new Vivus('programLightyellow', {
+new Vivus('program01', {
   type: 'delayed',
   duration: 200,
 });
 
-new Vivus('artWhiteCenter', {
-  type: 'delayed',
-  duration: 200,
-});
 
-new Vivus('productWhite', {
+new Vivus('product01', {
   type: 'delayed',
   duration: 200,
 });
