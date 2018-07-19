@@ -56,12 +56,24 @@
 <style>
   #graphic01,
   #graphic02,
-  #graphic03 {
+  #graphic03,
+  #art01,
+  #art02,
+  #art03,
+  #product01,
+  #product02,
+  #product03,
+  #product04,
+  #program01,
+  #program02,
+  #program03,
+  #program04,
+  #program05,
+  #furniture01,
+  #furniture02,
+  #furniture03
+   {
     display: none;
-  }
-
-  .fill-blue {
-    fill: #2ca6e0;
   }
 
   .cls-2,
@@ -74,53 +86,160 @@
 </style>
 
 <script>
-new Vivus('furniture01', {
-  type: 'delayed',
-  duration: 200,
-});
+
+// graphic
+
+function graphicAnimation(){
+  new Vivus('graphic01', {
+    type: 'delayed',
+    duration: 200,
+  });
+
+  new Vivus('graphic02', {
+    type: 'delayed',
+    duration: 200,
+  });
+
+  new Vivus('graphic03', {
+    type: 'delayed',
+    duration: 200,
+  });
+}
 
 setTimeout(function(){
-  $("#graphic01,#graphic02,#graphic03").show(0,function(){
-    new Vivus('graphic01', {
-      type: 'delayed',
-      duration: 200,
-    },function(){
-      $('.cls-2, .cls-11, .cls-12, .cls-13, .cls-14').show();
-      $('.cls-20 , .cls-4').addClass('fill-blue');
-    });
-
-    new Vivus('graphic02', {
-      type: 'delayed',
-      duration: 200,
-    },function(){
-      $('.cls-2, .cls-11, .cls-12, .cls-13, .cls-14').show();
-      $('.cls-20 , .cls-4').addClass('fill-blue');
-    });
-
-    new Vivus('graphic03', {
-      type: 'delayed',
-      duration: 200,
-    },function(){
-      $('.cls-2, .cls-11, .cls-12, .cls-13, .cls-14').show();
-      $('.cls-20 , .cls-4').addClass('fill-blue');
-    });
-  })
-},1000)
-
-new Vivus('art01', {
-  type: 'delayed',
-  duration: 200,
-});
-
-new Vivus('program01', {
-  type: 'delayed',
-  duration: 200,
-});
+  $("#graphic01,#graphic02,#graphic03").fadeIn();
+  graphicAnimation();
+},800);
 
 
-new Vivus('product01', {
-  type: 'delayed',
-  duration: 200,
-});
+// art
 
+function artAnimation(){
+  new Vivus('art01', {
+    type: 'delayed',
+    duration: 200,
+  });
+
+  new Vivus('art02', {
+    type: 'delayed',
+    duration: 200,
+  });
+
+  new Vivus('art03', {
+    type: 'delayed',
+    duration: 200,
+  });
+}
+
+setTimeout(function(){
+  $("#art01,#art02,#art03").fadeIn();
+  artAnimation();
+},1600);
+
+
+// product
+
+function productAnimation(){
+  new Vivus('product01', {
+    type: 'delayed',
+    duration: 200,
+  });
+
+  new Vivus('product02', {
+    type: 'delayed',
+    duration: 200,
+  });
+
+  new Vivus('product03', {
+    type: 'delayed',
+    duration: 200,
+  });
+
+  new Vivus('product04', {
+    type: 'delayed',
+    duration: 200,
+  });
+}
+
+setTimeout(function(){
+  $("#product01, #product02, #product03, #product04").fadeIn();
+  productAnimation();
+},2400);
+
+// program
+function programAnimation(){
+  new Vivus('program01', {
+    type: 'delayed',
+    duration: 200,
+  });
+
+  new Vivus('program02', {
+    type: 'delayed',
+    duration: 200,
+  });
+
+  new Vivus('program03', {
+    type: 'delayed',
+    duration: 200,
+  });
+
+  new Vivus('program04', {
+    type: 'delayed',
+    duration: 200,
+  });
+  new Vivus('program05', {
+    type: 'delayed',
+    duration: 200,
+  });
+}
+
+setTimeout(function(){
+  $("#program01,#program02,#program03,#program04,#program05").fadeIn();
+  programAnimation();
+},3200);
+
+// furniture
+
+function furnitureAnimation(){
+  new Vivus('furniture01', {
+    type: 'delayed',
+    duration: 200,
+  });
+
+  new Vivus('furniture02', {
+    type: 'delayed',
+    duration: 200,
+  });
+
+  new Vivus('furniture03', {
+    type: 'delayed',
+    duration: 200
+  }, color);
+}
+
+setTimeout(function(){
+  $("#furniture01,#furniture02,#furniture03").fadeIn();
+  furnitureAnimation();
+},4000);
+
+function color(){
+  $('.cls-2, .cls-11, .cls-12, .cls-13, .cls-14').fadeIn();
+
+  $('.cls-34').css({
+    fill: '#9ed8f5',
+    transition: "8.0s"
+  });
+  $('.cls-35, .cls-56, .cls-53').css({
+    fill: '#fff',
+    transition: "8.0s"
+  });
+  $('.cls-20, .cls-4, .cls-47').css({
+    fill: '#2ca6e0',
+    transition: "8.0s"
+  });
+  $('.cls-23, .cls-27').css({
+    fill: '#f39800',
+    transition: "8.0s"
+  });
+}
 </script>
