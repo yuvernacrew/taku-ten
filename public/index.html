@@ -1937,24 +1937,24 @@ $(function(){
   function graphicAnimation(){
     new Vivus('graphic01', {
       type: 'delayed',
-      duration: 150,
+      duration: 80,
     });
 
     new Vivus('graphic02', {
       type: 'delayed',
-      duration: 150,
+      duration: 80,
     });
 
-    new Vivus('graphic03', {
-      type: 'delayed',
-      duration: 150,
-    });
+    // new Vivus('graphic03', {
+    //   type: 'delayed',
+    //   duration: 80,
+    // });
   }
 
   setTimeout(function(){
     $("#graphic01,#graphic02,#graphic03").fadeIn();
     graphicAnimation();
-  },800);
+  },500);
 
 
   // art
@@ -1962,121 +1962,119 @@ $(function(){
   function artAnimation(){
     new Vivus('art01', {
       type: 'delayed',
-      duration: 150,
+      duration: 80,
     });
 
     new Vivus('art02', {
       type: 'delayed',
-      duration: 150,
+      duration: 80,
     });
 
-    new Vivus('art03', {
-      type: 'delayed',
-      duration: 150,
-    });
+    // new Vivus('art03', {
+    //   type: 'delayed',
+    //   duration: 80,
+    // });
   }
 
   setTimeout(function(){
     $("#art01,#art02,#art03").fadeIn();
     artAnimation();
-  },1600);
+  },800);
 
 
   // product
 
   function productAnimation(){
-    new Vivus('product01', {
-      type: 'delayed',
-      duration: 150,
-    });
-
-    new Vivus('product02', {
-      type: 'delayed',
-      duration: 150,
-    });
+    // new Vivus('product01', {
+    //   type: 'delayed',
+    //   duration: 80,
+    // });
+    //
+    // new Vivus('product02', {
+    //   type: 'delayed',
+    //   duration: 80,
+    // });
 
     new Vivus('product03', {
       type: 'delayed',
-      duration: 150,
+      duration: 80,
     });
 
     new Vivus('product04', {
       type: 'delayed',
-      duration: 150,
+      duration: 80,
     });
   }
 
   setTimeout(function(){
     $("#product01, #product02, #product03, #product04").fadeIn();
     productAnimation();
-  },2400);
+  },1100);
 
   // program
   function programAnimation(){
-    new Vivus('program01', {
-      type: 'delayed',
-      duration: 150,
-    });
+    // new Vivus('program01', {
+    //   type: 'delayed',
+    //   duration: 80,
+    // });
 
     new Vivus('program02', {
       type: 'delayed',
-      duration: 150,
+      duration: 80,
     });
 
     new Vivus('program03', {
       type: 'delayed',
-      duration: 150,
+      duration: 80,
     });
 
-    new Vivus('program04', {
-      type: 'delayed',
-      duration: 150,
-    });
-    new Vivus('program05', {
-      type: 'delayed',
-      duration: 150,
-    });
+    // new Vivus('program04', {
+    //   type: 'delayed',
+    //   duration: 80,
+    // });
+    // new Vivus('program05', {
+    //   type: 'delayed',
+    //   duration: 80,
+    // });
   }
 
   setTimeout(function(){
     $("#program01,#program02,#program03,#program04,#program05").fadeIn();
     programAnimation();
-  },3200);
+  },1400);
 
   // furniture
 
   function furnitureAnimation(){
     new Vivus('furniture01', {
       type: 'delayed',
-      duration: 150,
+      duration: 50,
     });
 
     new Vivus('furniture02', {
       type: 'delayed',
-      duration: 150,
+      duration: 50,
     });
 
     new Vivus('furniture03', {
       type: 'delayed',
-      duration: 150,
+      duration: 50,
     }, animationEnd);
 
     new Vivus('furniture04', {
       type: 'delayed',
-      duration: 150,
+      duration: 50,
     });
   }
 
   setTimeout(function(){
     $("#furniture01 ,#furniture02, #furniture03, #furniture04").fadeIn();
     furnitureAnimation();
-  },4000);
-
-  $fadeIn = $('.cls-2, .cls-11, .cls-12, .cls-13, .cls-14, .mv-logo');
+  },1400);
 
   $mvDetail = $('.mv-title, .mv-detail')
   function animationEnd(){
-    $fadeIn.fadeIn();
+     $('.cls-2, .cls-11, .cls-12, .cls-13, .cls-14, .mv-logo').fadeIn();
 
     if($(window).width() > 768){
       $mvDetail.fadeIn();
