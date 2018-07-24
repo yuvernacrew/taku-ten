@@ -7,17 +7,19 @@ $text-rendering: auto;
 //フォント設定
 @font-face {
   font-family: "GothicBBBPro";
-  src: url(/assets/lib/fonts/A-OTF-GothicBBBPro-Medium.otf);
+  src: url(/assets/lib/fonts/A-OTF-GothicBBBPro-Medium.otf) format('opentype');
 }
 
 @font-face {
   font-family: "nevis";
-  src: url(/assets/lib/fonts/nevis.ttf);
+  src: url(/assets/lib/fonts/nevis.ttf) format('truetype');
+  ;
 }
 
 @font-face {
   font-family: "Toppan";
-  src: url(/assets/lib/fonts/ToppanBunkyuMidashiGothic-ExtraBold.otf);
+  src: url(/assets/lib/fonts/ToppanBunkyuMidashiGothic-ExtraBold.otf)
+  format('opentype') ;
 }
 
 // color設定
