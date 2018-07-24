@@ -1871,7 +1871,7 @@
   <div class="container">
     <p class="about-date">
       <img src="assets/images/date.svg" alt="8/17(金)〜8/19(日)"><br>
-      10:00 - 17:00 <br class="is-sp">
+      <span class="english-font text-xlarge">10:00 - 17:00</span><br>
       (最終日19日のみ16:30終了)
     </p>
   </div>
@@ -1882,15 +1882,30 @@
   </div>
 
   <h2>ACCESS</h2>
-  <div class="container">
-    <p class="text-xlarge english-font text-center">comming soon...</p>
+  <p class="text-center mb12">名古屋市立大学 北千種キャンパス<br>
+  (萱場のバス停から徒歩1分、<br class="is-sp">地下鉄砂田橋駅から徒歩17分)</p>
+  <div class="gmap">
+    <div colspan="2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.0232931917335!2d136.94523131524517!3d35.180971980313956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDEwJzUxLjUiTiAxMzbCsDU2JzUwLjciRQ!5e0!3m2!1sja!2sus!4v1500212536352" width="" height="" allowfullscreen=""></iframe>
+    </div>
   </div>
+  <p></p>
 </div>
-
-
-
 <footer>
-
+  <div class="sns-container">
+    <a href="https://www.facebook.com/geikou.takuten/" target="_blank">
+      <p>\ facebook /</p>
+      <img src="assets/images/icon-fb.png" alt="facebookのロゴ">
+    </a>
+    <a href="https://twitter.com/takuten_geikou" target="_blank">
+      <p>\ twitter /</p>
+      <img src="assets/images/icon-twitter.png" alt="twitterのロゴ">
+    </a>
+  </div>
+  <div class="sponser-container">
+    <a href="http://www.sda.nagoya-cu.ac.jp/dousoukai/index.html" target="_blank"><img src="assets/images/kenkokai.png" alt="萱光会"></a>
+  </div>
+  <p class="copy">© 2018 卓展</p>
 </footer>
 
 <style>
@@ -1912,28 +1927,28 @@
   #furniture01,
   #furniture02,
   #furniture03,
-  #furniture04,
-  .mv-logo,
-  .mv-title,
-  .mv-detail
+  #furniture04
    {
     display: none;
   }
 
+  .mv-logo,
+  .mv-title,
+  .mv-detail,
   .cls-2,
   .cls-11,
   .cls-12,
   .cls-13,
   .cls-14 {
-    display: none;
+    opacity: 0;
   }
+
 </style>
 
 <script>
 $(function(){
 
   // graphic
-
   function graphicAnimation(){
     new Vivus('graphic01', {
       type: 'delayed',
@@ -1944,21 +1959,15 @@ $(function(){
       type: 'delayed',
       duration: 80,
     });
-
-    // new Vivus('graphic03', {
-    //   type: 'delayed',
-    //   duration: 80,
-    // });
   }
 
   setTimeout(function(){
     $("#graphic01,#graphic02,#graphic03").fadeIn();
     graphicAnimation();
-  },500);
+  },400);
 
 
   // art
-
   function artAnimation(){
     new Vivus('art01', {
       type: 'delayed',
@@ -1969,11 +1978,6 @@ $(function(){
       type: 'delayed',
       duration: 80,
     });
-
-    // new Vivus('art03', {
-    //   type: 'delayed',
-    //   duration: 80,
-    // });
   }
 
   setTimeout(function(){
@@ -1983,18 +1987,7 @@ $(function(){
 
 
   // product
-
   function productAnimation(){
-    // new Vivus('product01', {
-    //   type: 'delayed',
-    //   duration: 80,
-    // });
-    //
-    // new Vivus('product02', {
-    //   type: 'delayed',
-    //   duration: 80,
-    // });
-
     new Vivus('product03', {
       type: 'delayed',
       duration: 80,
@@ -2013,11 +2006,6 @@ $(function(){
 
   // program
   function programAnimation(){
-    // new Vivus('program01', {
-    //   type: 'delayed',
-    //   duration: 80,
-    // });
-
     new Vivus('program02', {
       type: 'delayed',
       duration: 80,
@@ -2027,15 +2015,6 @@ $(function(){
       type: 'delayed',
       duration: 80,
     });
-
-    // new Vivus('program04', {
-    //   type: 'delayed',
-    //   duration: 80,
-    // });
-    // new Vivus('program05', {
-    //   type: 'delayed',
-    //   duration: 80,
-    // });
   }
 
   setTimeout(function(){
@@ -2048,22 +2027,22 @@ $(function(){
   function furnitureAnimation(){
     new Vivus('furniture01', {
       type: 'delayed',
-      duration: 50,
+      duration: 70,
     });
 
     new Vivus('furniture02', {
       type: 'delayed',
-      duration: 50,
+      duration: 70,
     });
 
     new Vivus('furniture03', {
       type: 'delayed',
-      duration: 50,
+      duration: 70,
     }, animationEnd);
 
     new Vivus('furniture04', {
       type: 'delayed',
-      duration: 50,
+      duration: 70,
     });
   }
 
@@ -2074,10 +2053,14 @@ $(function(){
 
   $mvDetail = $('.mv-title, .mv-detail')
   function animationEnd(){
-     $('.cls-2, .cls-11, .cls-12, .cls-13, .cls-14, .mv-logo').fadeIn();
+     $('.cls-2, .cls-11, .cls-12, .cls-13, .cls-14').css({opacity: '0.0'})
+        .animate({opacity: '1'}, 400);
+
+     $('.mv-logo').css({opacity: '0.0'})
+        .animate({opacity: '1'}, 400);
 
     if($(window).width() > 768){
-      $mvDetail.fadeIn();
+      $mvDetail.css({opacity: '0.0'}).animate({opacity: '1'}, 400);
     }
 
     $('.cls-34').css({

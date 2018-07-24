@@ -196,11 +196,11 @@
 
 .about-container  {
   width: calc(100% - 120px);
-  margin: 40px auto 0;
-  padding: 40px 0;
+  margin: 40px auto 40px;
+  padding: 40px 0 80px;
   background-image: url('../images/about-background.png');
-  background-size: cover;
-  background-repeat: repeat-y;
+  background-size: contain;
+  background-repeat: repeat;
 
   h2 {
     font-family: $english-font-family;
@@ -209,7 +209,8 @@
     position: relative;
     letter-spacing: 4px;
     margin: 28px auto 20px;
-    width: 40%;
+    width: 28%;
+    line-height: 1.4;
   }
 
   .container {
@@ -229,23 +230,80 @@
       }
     }
   }
+
+  .gmap {
+    height: 300px;
+
+    iframe {
+      width: 80%;
+      margin-left: 10%;
+      height: 300px;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+
+  .sns-container {
+    margin: 0 auto 40px;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      display: block;
+      width: 96px;
+      height: auto;
+
+      p {
+        color: $black;
+        text-align: center;
+        margin-bottom: 8px;
+      }
+
+      img {
+        width: 100%;
+
+      }
+    }
+  }
+
+  .sponser-container {
+    width: 100%;
+    text-align: center;
+    a {
+      img {
+
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .copy {
+    text-align: center;
+    padding: 20px 0;
+  }
 }
 
 @media(max-width: 780px){
   .about-container  {
     width: calc(100% - 40px);
-    margin: 120px auto 0;
+    margin: 80px auto 0;
     padding: 40px 0;
     background-image: url('../images/about-background.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: repeat-y;
 
     h2 {
       width: 80%;
+      line-height: 1.0;
+      background: linear-gradient(transparent 70%, $accent-lightblue-color 30%);
     }
 
     .container {
-      padding: 0 2%;
+      padding: 0 4%;
 
       .about-text {
         line-height: 1.4;
@@ -255,6 +313,40 @@
         img {
           width: 90%;
           margin-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  footer {
+    .sns-container {
+      margin: 0 auto 40px;
+      width: 80%;
+
+      a {
+        display: block;
+        width: 96px;
+        height: auto;
+
+        p {
+          color: $black;
+          text-align: center;
+          margin-bottom: 8px;
+        }
+
+        img {
+          width: 60%;
+          margin-left: 20%;
+        }
+      }
+    }
+
+    .sponser-container {
+      width: 100%;
+      a {
+        img {
+          margin: 0 auto;
+          width: 80%;
         }
       }
     }
