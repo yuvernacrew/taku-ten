@@ -20,13 +20,13 @@ body {
 }
 
 .english-font {
-  font-family: $english-font-family;
+  font-family: $english-font-family !important;
   letter-spacing: 4px;
   line-height: 0.9;
 }
 
 .bold-font {
-  font-family: $bold-font-family;
+  font-family: $bold-font-family !important;
 }
 
 /*------------------------
