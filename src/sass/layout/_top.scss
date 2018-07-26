@@ -23,7 +23,7 @@
   }
 
   .mv-content {
-    width : 100vw;
+    width: 100vw;
     height: 100vh;
     background-color: $primary-color;
 
@@ -79,7 +79,7 @@
         position: absolute;
         right: 0;
         left: 0;
-        z-index: 5
+        z-index: 5;
       }
     }
 
@@ -213,10 +213,9 @@
 }
 
 
-
 .about-container  {
   width: calc(100% - 120px);
-  margin: 40px auto 40px;
+  margin: 40px auto;
   padding: 40px 0 80px;
   background-image: url('../images/about-background.png');
   background-size: contain;
@@ -288,6 +287,9 @@
       }
     }
     .project-detail {
+      flex: 1;
+      -webkit-flex: 1;
+
       .project-title {
         color: $accent-orange-color;
         font-family: $english-font-family;
