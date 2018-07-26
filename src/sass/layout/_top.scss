@@ -196,8 +196,8 @@
         z-index: 4;
 
         p {
-          font-family: $english-font-family;
-          font-weight: bold;
+          font-family: $english-font-family !important;
+          font-weight: bold !important;
         }
 
         &:after {
