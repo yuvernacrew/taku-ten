@@ -192,10 +192,13 @@
       .sp-mv-title {
         bottom: 0;
         left: 10px;
-        font-family: $english-font-family;
-        font-weight: 400;
         font-size: 24px;
         z-index: 4;
+
+        p {
+          font-family: $english-font-family;
+          font-weight: 400;
+        }
 
         &:after {
           content: "";
