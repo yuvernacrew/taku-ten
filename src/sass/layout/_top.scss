@@ -215,10 +215,16 @@
   }
 }
 
+h2 {
+  text-align: right;
+  margin-right: 40px;
+  font-size: 28px;
+  font-family: $english-font-family;
+}
 
-.about-container  {
+.contents-container  {
   width: calc(100% - 120px);
-  margin: 40px auto;
+  margin: 0 auto 40px;
   padding: 40px 0 80px;
   background-image: url('../images/about-background.png');
   background-size: contain;
@@ -382,9 +388,9 @@ footer {
 }
 
 @media(max-width: 780px){
-  .about-container  {
+  .contents-container  {
     width: calc(100% - 40px);
-    margin: 80px auto 0;
+    margin: 0 auto;
     padding: 40px 0;
     background-image: url('../images/about-background.png');
     background-size: contain;
