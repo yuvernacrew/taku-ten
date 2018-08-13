@@ -13,6 +13,8 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 $(function(){
+
+
   // graphic
   function graphicAnimation(){
     new Vivus('graphic01', {
@@ -150,4 +152,12 @@ $(function(){
       transition: "8.0s"
     });
   }
+
+  // slick
+
+  $('.project-photo').slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
 });
